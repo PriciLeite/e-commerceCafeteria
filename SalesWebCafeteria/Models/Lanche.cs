@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SalesWebCafeteria.Models
 {
-    [Table("Laches")]
+    [Table("Lanches")]
     public class Lanche
     {
         [Key]
