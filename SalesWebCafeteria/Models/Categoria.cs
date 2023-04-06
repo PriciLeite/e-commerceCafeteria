@@ -11,7 +11,7 @@ namespace SalesWebCafeteria.Models
 
         [StringLength(100,ErrorMessage ="Tamanho máximo de 100 caracteres!")]
         [Required(ErrorMessage ="Nome da Categoria é obrigatório!")]
-        [Display(Name ="Nome Categoria")]
+        [Display(Name ="Categoria")]
         public string CategoriaNome { get; set; }
 
         [StringLength(100, ErrorMessage = "Tamanho máximo de 100 caracteres!")]
