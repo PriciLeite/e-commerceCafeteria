@@ -25,5 +25,14 @@ namespace SalesWebCafeteria.Controllers
 
             return View(lanches);
         }
+    
+        
+        public IActionResult Index()
+        {
+            return View();
+        }
+    
+    
+    
     }
 }
