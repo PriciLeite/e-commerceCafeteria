@@ -14,7 +14,15 @@ namespace SalesWebCafeteria.Controllers
 
         public IActionResult List()
         {
+            ViewData["Titulo"] = "Cardápio";
+            ViewData["Data"] = DateTime.Now;
+
             var lanches = _lancheRepository.Lanches;
+            var totalLanches = lanches.Count();
+
+            ViewBag.Total = "Total Disponíveis: ";
+            ViewBag.totalLanches = totalLanches;
+
             return View(lanches);
         }
     }
