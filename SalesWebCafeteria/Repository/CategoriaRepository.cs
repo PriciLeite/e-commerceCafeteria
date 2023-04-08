@@ -7,9 +7,9 @@ namespace SalesWebCafeteria.Repository
     {
         private readonly ICategoriaRepository _context;
 
-        public CategoriaRepository(ICategoriaRepository repository)
+        public CategoriaRepository(ICategoriaRepository context)
         {
-            _context = repository;
+            _context = context;
         }
 
         public IEnumerable<Categoria> Categorias => _context.Categorias;

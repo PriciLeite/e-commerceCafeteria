@@ -54,5 +54,9 @@ namespace SalesWebCafeteria.Models
 
         public virtual Categoria Categoria { get; set; }
 
+       
+  
+    
+    
     }
 }

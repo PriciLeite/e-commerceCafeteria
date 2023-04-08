@@ -20,5 +20,7 @@ namespace SalesWebCafeteria.Models
         public string Descricao { get; set; }
         
         public List<Lanche> Lanches { get; set; }
+
+      
     }
 }
