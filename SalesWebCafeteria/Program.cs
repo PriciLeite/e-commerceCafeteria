@@ -1,11 +1,4 @@
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace SalesWebCafeteria;
 
@@ -32,6 +25,12 @@ public class Program
 
 
 /*var builder = WebApplication.CreateBuilder(args);
+
+// Conecxão SqlServer
+var connection = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<AppDbContext>(options =>
+           options.UseSqlServer(connection));  
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

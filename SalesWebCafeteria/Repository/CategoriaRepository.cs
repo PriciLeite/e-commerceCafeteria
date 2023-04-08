@@ -1,13 +1,14 @@
-﻿using SalesWebCafeteria.Models;
+﻿using SalesWebCafeteria.Context;
+using SalesWebCafeteria.Models;
 using SalesWebCafeteria.Repository.Interfaces;
 
 namespace SalesWebCafeteria.Repository
 {
     public class CategoriaRepository : ICategoriaRepository
     {
-        private readonly ICategoriaRepository _context;
+        private readonly AppDbContext _context;
 
-        public CategoriaRepository(ICategoriaRepository context)
+        public CategoriaRepository(AppDbContext context)
         {
             _context = context;
         }
