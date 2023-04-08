@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LloQlv2t5GkVhNyL1z7Eg9xAvTRLgZRU0znm12gOClViH48Xlw8X38GDs2AaL3C9hAaDpZjDDxz7yRlsCr75IA==",
+  "dgSpecHash": "h9k9Dw/FYzcIekgEcBWkn+VDdU+ejzodTzm2UTAFnBIqaXoxF8hcJHYFySzbalFD/0KHXQcyN9aOqaYWK2Huuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Prici\\source\\repos\\SalesWebCafeteria\\SalesWebCafeteria\\SalesWebCafeteria.csproj",
+  "projectFilePath": "C:\\Users\\Prici\\Source\\Repos\\PriciLeite\\e-commerceCafeteria\\SalesWebCafeteria\\SalesWebCafeteria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Prici\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Prici\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

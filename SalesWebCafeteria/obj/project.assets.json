@@ -2015,11 +2015,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Prici\\source\\repos\\SalesWebCafeteria\\SalesWebCafeteria\\SalesWebCafeteria.csproj",
+      "projectUniqueName": "C:\\Users\\Prici\\Source\\Repos\\PriciLeite\\e-commerceCafeteria\\SalesWebCafeteria\\SalesWebCafeteria.csproj",
       "projectName": "SalesWebCafeteria",
-      "projectPath": "C:\\Users\\Prici\\source\\repos\\SalesWebCafeteria\\SalesWebCafeteria\\SalesWebCafeteria.csproj",
+      "projectPath": "C:\\Users\\Prici\\Source\\Repos\\PriciLeite\\e-commerceCafeteria\\SalesWebCafeteria\\SalesWebCafeteria.csproj",
       "packagesPath": "C:\\Users\\Prici\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Prici\\source\\repos\\SalesWebCafeteria\\SalesWebCafeteria\\obj\\",
+      "outputPath": "C:\\Users\\Prici\\Source\\Repos\\PriciLeite\\e-commerceCafeteria\\SalesWebCafeteria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
