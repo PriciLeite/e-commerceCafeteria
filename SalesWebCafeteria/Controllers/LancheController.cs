@@ -26,10 +26,11 @@ namespace SalesWebCafeteria.Controllers
 
              return View(lanches); */
 
-            var lanchesListViewModels = new LancheListViewModel();
-            lanchesListViewModels.lanches = _lancheRepository.Lanches;
-            lanchesListViewModels.CategoriaAtual = "Categoria Atual";
-            return View(lanchesListViewModels);
+            var lanchesListViewModel = new LancheListViewModel();
+            lanchesListViewModel.Lanches = _lancheRepository.Lanches;
+            lanchesListViewModel.CategoriaAtual = "Categoria Atual";
+
+            return View(lanchesListViewModel);
 
         }
     
