@@ -1,25 +1,23 @@
-﻿@model IEnumerable<SalesWebCafeteria.Models.Lanche>
+﻿@model SalesWebCafeteria.Models.ViewModels.LancheListViewModel
 
 
-<div>
+@*<div>
     <h1>@ViewData["Titulo"]</h1>
     <h5>@ViewData["Data"]</h5>
 </div>
 <hr />
 <h5>@ViewBag.Total @ViewBag.totalLanches</h5>
-<hr />
+<hr />*@
+
+<div>
+    <h2>@Model.CategoriaAtual</h2>
+</div>
+
 <div class="Container">
     <div class="row">
-        @foreach (var lanche in Model)
+        @foreach (var lanche in Model.lanches)
         {
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <h3>@lanche.Nome</h3>
-                <p><img src="@lanche.ImagemUrl" class="img-fluid"></p>
-                <h5>Valor: R$@lanche.Preco.ToString("F2", CultureInfo.InvariantCulture)</h5>
-                <p>
-                    <h6>Ingredientes: <br/>@lanche.DescricaoCurta</h6>
-                </p>
-            </div>
+           <partial name="_LanchesResumoPartial" for="@lanche" />
         }
     </div>
 </div>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SalesWebCafeteria.Models.ViewModels;
 using SalesWebCafeteria.Repository.Interfaces;
 
 namespace SalesWebCafeteria.Controllers
@@ -14,24 +15,26 @@ namespace SalesWebCafeteria.Controllers
 
         public IActionResult List()
         {
-            ViewData["Titulo"] = "Cardápio";
-            ViewData["Data"] = DateTime.Now;
+            /* ViewData["Titulo"] = "Cardápio";
+             ViewData["Data"] = DateTime.Now; 
 
-            var lanches = _lancheRepository.Lanches;
-            var totalLanches = lanches.Count();
+             var lanches = _lancheRepository.Lanches;
+             var totalLanches = lanches.Count();
 
-            ViewBag.Total = "Total Disponíveis: ";
-            ViewBag.totalLanches = totalLanches;
+             ViewBag.Total = "Total Disponíveis: ";
+             ViewBag.totalLanches = totalLanches;
 
-            return View(lanches);
+             return View(lanches); */
+
+            var lanchesListViewModels = new LancheListViewModel();
+            lanchesListViewModels.lanches = _lancheRepository.Lanches;
+            lanchesListViewModels.CategoriaAtual = "Categoria Atual";
+            return View(lanchesListViewModels);
+
         }
     
         
-        public IActionResult Index()
-        {
-            return View();
-        }
-    
+       
     
     
     }
