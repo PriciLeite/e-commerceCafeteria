@@ -24,7 +24,7 @@ namespace SalesWebCafeteria.Migrations
              "VALUES('Café', 'Mocacciono')");
 
             migrationBuilder.Sql("INSERT INTO Categoria(CategoriaNome,Descricao) " +
-            "VALUES('Lanches', 'Natural e Misto Quente')");
+            "VALUES('Lanches', 'Natural e Chess Salada')");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
