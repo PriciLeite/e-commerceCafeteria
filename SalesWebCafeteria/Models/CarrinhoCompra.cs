@@ -1,4 +1,5 @@
 ﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.EntityFrameworkCore;
 using SalesWebCafeteria.Context;
 using System.Security.Cryptography.X509Certificates;
 
@@ -77,13 +78,22 @@ public class CarrinhoCompra
                 _context.CarrinhoCompraItens.Remove(carrinhoCompraItem);
             }
             _context.SaveChanges();
-        }
-        
-    
-    
-    
-    
+        }        
     }
+
+    public List<CarrinhoCompraItem> GetCarrinhoCompraItems()
+    {
+        return CarrinhoCompraItems ??
+            (CarrinhoCompraItems = _context.CarrinhoCompraItens
+            .Where(s => s.CarrinhoCompraId == CarrinhoCompraId)
+            .Include(s => s.Lanche)
+            .ToList());
+    }
+
+
+
+
+
 
 }
 
