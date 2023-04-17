@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SalesWebCafeteria.Context;
+using SalesWebCafeteria.Models;
 using SalesWebCafeteria.Repository;
 using SalesWebCafeteria.Repository.Interfaces;
 
@@ -23,8 +24,9 @@ public class Startup
 
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
-
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+        services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
+
 
         services.AddControllersWithViews();
         services.AddMemoryCache();
