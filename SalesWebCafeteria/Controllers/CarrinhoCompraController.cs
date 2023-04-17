@@ -28,7 +28,25 @@ namespace SalesWebCafeteria.Controllers
             };
             return View(carrinhoCompraVM);
         }
-    
-    
+
+        public IActionResult AdicionarItemNoCarrinhoCompra(int lancheId)
+        {
+            var lancheSelecionado = _lancheRepository.Lanches.FirstOrDefault(p => p.LancheId == lancheId);
+            if (lancheSelecionado != null)
+            {
+                _carrinhoCompra.AdicionarCarrinho(lancheSelecionado);
+            }
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult RemoverItemNoCarrinhoCompra(int lancheId)
+        {
+            var lancheSelecionado = _lancheRepository.Lanches.FirstOrDefault(p => p.LancheId == lancheId);
+            if (lancheSelecionado != null)
+            {
+                _carrinhoCompra.RemoverDoCarrinho(lancheSelecionado);
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
