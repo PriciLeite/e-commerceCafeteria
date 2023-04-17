@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SalesWebCafeteria.Models;
+using SalesWebCafeteria.Models.ViewModels;
 using SalesWebCafeteria.Repository.Interfaces;
 
 namespace SalesWebCafeteria.Controllers
@@ -17,7 +18,17 @@ namespace SalesWebCafeteria.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var Itens = _carrinhoCompra.GetCarrinhoCompraItems();
+            _carrinhoCompra.CarrinhoCompraItems = Itens;
+
+            var carrinhoCompraVM = new CarrinhoCompraViewModel
+            {
+                CarrinhoCompra = _carrinhoCompra,
+                CarrinhoCompraTotal = _carrinhoCompra.GetCarrinhoCompraTotal()                
+            };
+            return View(carrinhoCompraVM);
         }
+    
+    
     }
 }
