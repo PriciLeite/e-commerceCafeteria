@@ -1,12 +1,17 @@
-
 ﻿
 
 
-<div align="center" >      
+<div align="center">
     <partial name="_Carousel" />
 </div>
 
+<br />
+<h3>Os Preferidos da Semana <img src="~/images/preferidos.svg" height="50" width="50" /> </h3>
+<hr />
 
-
-
-
+<div class="row">
+    @foreach (var lanche in Model.LanchesPreferidos)
+    {
+        <partial name="_LanchesResumoPartial" for="@lanche" />
+    }
+</div>
