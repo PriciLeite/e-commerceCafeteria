@@ -39,7 +39,7 @@ namespace SalesWebCafeteria.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult RemoverItemNoCarrinhoCompra(int lancheId)
+        public IActionResult RemoverItemDoCarrinhoCompra(int lancheId)
         {
             var lancheSelecionado = _lancheRepository.Lanches.FirstOrDefault(p => p.LancheId == lancheId);
             if (lancheSelecionado != null)
