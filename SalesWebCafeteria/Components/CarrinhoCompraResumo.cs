@@ -15,15 +15,15 @@ namespace SalesWebCafeteria.Components
 
         public IViewComponentResult Invoke()
         {
-            // var Itens = _carrinhoCompra.GetCarrinhoCompraItems();
+            var Itens = _carrinhoCompra.GetCarrinhoCompraItems();
 
-            var itens = new List<CarrinhoCompraItem>()
-            {
-                new CarrinhoCompraItem(),
-                new CarrinhoCompraItem()
-            };
+            //var Itens = new List<CarrinhoCompraItem>()
+            //{
+            //    new CarrinhoCompraItem(),
+            //    new CarrinhoCompraItem()
+            //};
 
-            _carrinhoCompra.CarrinhoCompraItems = itens;
+            _carrinhoCompra.CarrinhoCompraItems = Itens;
 
             var carrinhoCompraVM = new CarrinhoCompraViewModel
             {
