@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] -Cafeteria Croissant</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-solar.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SalesWebCafeteria.styles.css" asp-append-version="true" />
 </head>
@@ -26,14 +26,18 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dropdown" asp-area="" asp-controller="Lanche" asp-action="List">Cardápio</a>
-                        </li>                       
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dropdown" asp-area="" asp-controller="Contato" asp-action="Index">Contato</a>
+                        </li>
                         <form class="d-flex">
                             <input class="form-control me-sm-2" type="search" placeholder="Search">
                             <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                         </form>
                     </ul>
+                    @* Carrinho-icon*@
                     @await Component.InvokeAsync("CarrinhoCompraResumo")
-                </div>               
+                </div>
             </div>
         </nav>
     </header>
