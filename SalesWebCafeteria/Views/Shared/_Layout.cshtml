@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] -Cafeteria Croissant</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-solar.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SalesWebCafeteria.styles.css" asp-append-version="true" />
 </head>
@@ -27,9 +27,6 @@
                         <li class="nav-item">
                             <a class="nav-link text-dropdown" asp-area="" asp-controller="Lanche" asp-action="List">Cardápio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dropdown" asp-area="" asp-controller="CarrinhoCompra" asp-action="Index">Carrinho de Compra</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                             <div class="dropdown-menu">
@@ -40,13 +37,13 @@
                                 <a class="dropdown-item" href="#">Separated link</a>
                             </div>
                         </li>
+                        <form class="d-flex">
+                            <input class="form-control me-sm-2" type="search" placeholder="Search">
+                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                        </form>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-sm-2" type="search" placeholder="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                    </ul>
-                </div>
+                    @await Component.InvokeAsync("CarrinhoCompraResumo")
+                </div>               
             </div>
         </nav>
     </header>
