@@ -12,8 +12,8 @@ using SalesWebCafeteria.Context;
 namespace SalesWebCafeteria.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230413010200_CarrinhoCompraItem")]
-    partial class CarrinhoCompraItem
+    [Migration("20230420150030_PopularCategorias")]
+    partial class PopularCategorias
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

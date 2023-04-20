@@ -11,7 +11,7 @@ namespace SalesWebCafeteria.Models
 
         [Required(ErrorMessage = "Nome do lanche é obrigatório!")]
         [StringLength(80, MinimumLength =10, ErrorMessage ="O {0} deve ser no mínimo {1} e no máximo {2}")]
-        [Display(Name ="Nome do Lache")]
+        [Display(Name ="Nome do Lanche")]
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Descrição é obrigatório!")]
