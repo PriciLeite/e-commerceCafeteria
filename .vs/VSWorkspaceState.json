@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SalesWebCafeteria",
+    "\\SalesWebCafeteria\\Controllers"
   ],
-  "SelectedNode": "\\SalesWebCafeteria.sln",
+  "SelectedNode": "\\SalesWebCafeteria\\Controllers\\ContatoController.cs",
   "PreviewInSolutionExplorer": false
 }
