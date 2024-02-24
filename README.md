@@ -1,5 +1,5 @@
 
-### Professor: Macoratti.
+
 ### Projeto Mvc: Criando e-commerce - Cafeteria.
 
 #### Entidade Relacionamento Modelo:
@@ -10,3 +10,4 @@
 - Estrutura usada: DotNet 5.0 adicionando no projeto a Class Startup.cs
 
 ![modelodeprojeto](https://user-images.githubusercontent.com/109990443/228589234-509c43aa-6b28-4922-8f02-66ce5b54f467.png)
+### Professor: Macoratti.
